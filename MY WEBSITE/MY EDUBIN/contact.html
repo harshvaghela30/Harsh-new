@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edubin - LMS Education HTML Templates</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" type="text/css" href="style.css" >
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+  /* Center the loader */
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    /* text-align: center; */
+  }
+  </style>
+
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+  
+  <div id="loader"></div>
+  
+  <div style="display:none;" id="myDiv" class="animate-bottom"> 
+
+    <div class="container hide">
+        <div class="col-md-12" style="height: 60px;">
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                        <ul style="margin-left: 30px;">
+                            <div class="row">
+                            <li class="color-b">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="" class="ml-2 color-b"><strong>info@yourmail.com</strong></a>
+                            </li>
+                            <li class="ml-4 color-b">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span class="ml-2 color-b"><strong>+0123-456-5678</strong></span>
+                            </li>
+                            </div>
+                        </ul>
+                </div>
+                <div class="col-md-6 mt-4">
+                   <div class="row">
+                    
+                       <ul class=" ml-auto mt-1">
+                           <div class="row">
+                                <p class="color-b"><strong>Follow Us :</strong></p>
+                            <li class="ml-3"><a href="#"><i class="fa fa-facebook color-b" aria-hidden="true"></i></a></li>
+                            <li class="ml-3"><a href="#"><i class="fa fa-youtube color-b" aria-hidden="true"></i></a></li>
+                            <li class="ml-3"><a href="#"><i class="fa fa-twitter color-b" aria-hidden="true"></i></a></li>
+                            <li class="ml-3"><a href="#"><i class="fa fa-instagram color-b" aria-hidden="true"></i></a></li>
+                            <li class="ml-3"><a href="#"><i class="fa fa-linkedin color-b" aria-hidden="true"></i></a></li>
+                            </div>
+                        </ul>
+
+                    <button class="yellow-btn f2 ml-5"><strong>Login</strong></button>
+                    <button class="yellow-btn f2 ml-3"><strong>Register</strong></button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hide">
+
+    
+<nav class="navbar navbar-expand-md navbar-light sticky-top bg-white"><div class="container">
+    <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+          
+          <!-- Brand -->
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link f2 mr-2 color-y" href="index.html"><span class="text">HOME</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link f2 mr-2" href="about.html"><span class="text">ABOUT US</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link f2 mr-2 dropdown-toggle" href="courses.html" data-toggle="dropdown"><span class="text">COURSES</span></a>
+                 
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="courses.html">COURSES 1</a>
+                      <hr class="p-0 m-0">
+                      <a class="dropdown-item" href="courses-single.html">COURSES 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link f2 mr-2" href="events.html"><span class="text">EVENTS</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link f2 mr-2" href="teachers.html"><span class="text">TEACHERS</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link f2 mr-2" href="blog.html"><span class="text">BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link f2 mr-2" href="shop.html"><span class="text">SHOP</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link f2 mr-2" href="contact.html"><span class="text">CONTACT</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-search color-b" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-shopping-bag color-b" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>   </div>
+          </nav>
+
+<div class="col-md-12 about-bg p-0">
+  <div class="shadow-b h-100 w-100">
+  <div class="container">
+    <div class="col-md-12 pt-105 pb-110">
+      <h2 class="fs-52 color-white fw-6 pb-15">Contact</h2>
+      <a href="index.html" style="text-decoration: none;" class="f2 color-white fs-18 fw-6">Home</a>
+      <span class="color-white fw-6 ml-05 fs-18">/</span>
+      <span class="color-y f2 fw-6 ml-05 fs-18">Contact</span>
+    </div>
+  </div>
+  </div>
+</div>
+
+<section class="pt-90 pb-120 gray-bg">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-7">
+                <div class="contact-from mt-30">
+                    <div>
+                        <h5 class="fw-7 pb-2">Our course</h5>
+                        <hr style="height: 1px; width: 35px;background-color: #ffc600; margin: 0;">
+                        <h2 class="fs-48 pt-2 fw-7"><strong>Featured courses</strong></h2>
+                    </div>
+
+                    <div class="pt-45">
+                        <form action="" class="was-validated">
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <div class="mt-20 mb-20">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="uname" placeholder="Your name" name="uname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Name is required</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="mt-20 mb-20">
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" id="uname" placeholder="Email" name="uname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Email is required</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="mt-20 mb-20">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="uname" placeholder="Subject" name="uname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Subject is required</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="mt-20 mb-20">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="uname" placeholder="Phone" name="uname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Phone is required</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-md-12">
+                                <div class="mt-20 mb-20">
+                                  <div class="form-group">
+                                    <textarea name="message" id="" cols="70" rows="3" placeholder="Message" class="form-control"></textarea>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please,leave us a message.</div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <button class="main-btn ml-15">Send</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="contact-address p-5 mt-30">
+                <div class="row">
+
+                  <div class="col-md-2 pt-10 col-2">
+                    <i class="fa fa-home contact-i"></i>
+                  </div>
+
+                  <div class="col-md-10 col-10">
+                    <p>301,3rd Floor ,Shyam Shikhar Complex, opp. Dinesh Chambers, Bapunagar, Ahmedabad, Gujarat 380024</p>
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-md-2 pt-10 col-2">
+                    <i class="fa fa-phone contact-i"></i>
+                  </div>
+
+                  <div class="col-md-10 pt-10 col-10">
+                    <p class="m-0">08000530134</p>
+                    <p>08000530134</p>
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-md-2 pt-10 col-2">
+                    <i class="fa fa-envelope contact-i"></i>
+                  </div>
+
+                  <div class="col-md-10 pt-10 col-10">
+                    <p class="m-0">info@hitechskillindia.in</p>
+                    <p>info@hitechskillindia.in</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-12 mt-30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.8965014655346!2d72.62986032936095!3d23.03896809999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87e685016def%3A0x1af6abf970892863!2sHi-TECH%20Institute%20of%20Information%20Technology%20-%20Tally%20Prime%20With%20GST%20Training%20%7C%20Web%20Designing%20%7C%20Php%20Course%20%7C%20Software%20Courses!5e0!3m2!1sen!2sin!4v1677473843862!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="col-md-12 pt-40 pb-70 bg-dark-blue">
+  <div class="container pt-40">
+    <div class="row">
+      <div class="col-md-3 col-12">
+        <div class="col-md-12 p-0">
+          <a href="#">
+            <img src="images/logo-2.png" alt="">
+          </a>
+        </div>
+        <p class="f2  pt-15 color-white">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+        <div class="col-md-12 p-0">
+          <a href="#">
+            <button class="my-btn rounded-circle border-0">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            </button>
+          </a>
+
+          <a href="#">
+            <button class="my-btn rounded-circle border-0 ml-15">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            </button>
+          </a>
+
+          <a href="#">
+            <button class="my-btn rounded-circle border-0 ml-15">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </button>
+          </a>
+
+          <a href="#">
+            <button class="my-btn rounded-circle border-0 ml-15">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="col-md-12 p-0">
+          <h6 class="color-white fs-18 fw-6">Sitemap</h6>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 col-6">
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Home</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">About us</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Courses</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">News</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Events</span>
+            </a>
+
+          </div>
+
+          <div class="col-md-6 col-6">
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Gallery</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Shop</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Teachers</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Support</span>
+            </a><br>
+
+            <a href="index.html" class="line-1">
+              <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+              <span class="m-hov f2 fs-15">Contact</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-2">
+
+        <div class="col-md-12 p-0">
+          <h6 class="color-white fs-18 fw-6">Support</h6>
+        </div>
+
+        <a href="index.html" class="line-1">
+          <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+          <span class="m-hov f2 fs-15">FAQS</span>
+        </a><br>
+
+        <a href="index.html" class="line-1">
+          <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+          <span class="m-hov f2 fs-15">Privacy</span>
+        </a><br>
+
+        <a href="index.html" class="line-1">
+          <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+          <span class="m-hov f2 fs-15">Policy</span>
+        </a><br>
+
+        <a href="index.html" class="line-1">
+          <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+          <span class="m-hov f2 fs-15">Support</span>
+        </a><br>
+
+        <a href="index.html" class="line-1">
+          <i class="fa fa-angle-right color-y" aria-hidden="true"></i>
+          <span class="m-hov f2 fs-15">Documentation</span>
+        </a>
+
+      </div>
+
+      <div class="col-md-3">
+
+        <div class="col-md-12 p-0">
+          <h6 class="color-white fs-18 fw-6">Contact Us</h6>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 col-2">
+            <i class="fa fa-home color-y" aria-hidden="true"></i>
+          </div>
+
+          <div class="col-md-10 p-0 col-10">
+            <p class="color-white f2 fs-15">143 castle road 517 district, kiyev port south Canada</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-2 col-2">
+            <i class="fa fa-phone color-y" aria-hidden="true"></i>
+          </div>
+
+          <div class="col-md-10 p-0 col-10">
+            <p class="color-white f2 fs-15">+3 123 456 789</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 col-2">
+            <i class="fa fa-envelope-o color-y" aria-hidden="true"></i>
+          </div>
+
+          <div class="col-md-10 p-0 col-10">
+            <p class="color-white f2 fs-15">info@yourmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12 bg-dark-blue-n pt-10 pb-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="text-md-left text-center pt-15">
+          <p class="color-white f2">© Copyrights 2023 Edubin All rights reserved. </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-md-right text-center pt-15">
+          <p class="color-white f2">Designed by hi-tech </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="#" class="back-to-top" style="display: block;">
+  <i class="fa fa-angle-up"></i></a>
+
+</div>
+    
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+  
+</body>
+</html>

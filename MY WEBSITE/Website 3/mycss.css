@@ -1,0 +1,130 @@
+.big-bg{
+    
+    background-image: url(img/hero-bg.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+.big-bg2{
+    
+    background-image: url(img/section-bg-img.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+
+.about-bg{
+    
+    background-image: url(img/about-bg-5.jpg);
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.services-bg{
+    
+    background-image: url(img/services-bg.jpg);
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.projects-bg{
+    
+    background-image: url(img/project-background.jpg);
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-bg{
+    
+    background-image: url(img/about-bg-2.jpg);
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.radius{
+    border-radius: 20px;
+}
+
+.shadow{
+    height: 100%;
+    width: 100%;
+    background-color: #00000078;
+}
+
+.form-1{
+    height: 50px;
+    width: 100%;
+    background-color: #d6d6d6;
+    border: 1px solid silver;
+    outline: none;
+}
+.form-1:hover{
+    border: none;
+}
+
+.form-2{
+    height: 150px;
+    width: 100%;
+    background-color: #d6d6d6;
+    border: 1px solid silver;
+    outline: none;
+}
+.form-2:hover{
+    border: none;
+}
+
+.btn-1{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    color: white;
+    background-color: #fb2056;
+    border: none;
+}
+.btn-1:hover{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.fs{
+    font-size: 25px;
+}
+
+.fl{
+    float: left;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.ml-300{
+    margin-left: 300px;
+}
+
+.pad{
+    padding: 100px 0px;
+}
+
+
